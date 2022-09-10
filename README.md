@@ -1,4 +1,3 @@
-# ThePhish
 
 <div>
   <p align="center">
