@@ -2,14 +2,19 @@
 <div>
   <p align="center">
   <img src="imagenseis/giphy.gif" width="200"> 
+  <img src="imagensiete/giphy (1).gif" width="200"> 
+  
   </p>
 </div>     
 
-## UP210894_CPP </p> Repositorio materia de programación </p>
-### Soy estudiante de Ingenieria en Sistemas Computacionales de la Universidad Politecnica de Aguascalientes 
+> ## UP210894_CPP </p> Repositorio materia de programación </p>
+
+> ###Soy estudiante de Ingenieria en Sistemas Computacionales de la Universidad Politecnica de Aguascalientes 
 </p>
 
-|        Unidades       | Archivos |
+ <img src="imagensiete/giphy (1).gif" width="200" p align="right">
+
+|        Unidades       | Archivos | 
 |:---------------------:|:--------:|
 |        Unidad 1       |    U1    |
 |        Unidad 2       |    U2    | 
