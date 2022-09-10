@@ -2,7 +2,7 @@
 
 <div>
   <p align="center">
-![imagen](imagenseis/giphy.gif)
+<imagenseis/giphy.gif>
   </p>
 </div>    
     
