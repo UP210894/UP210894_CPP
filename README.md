@@ -12,7 +12,7 @@
 > ###Soy estudiante de Ingenieria en Sistemas Computacionales de la Universidad Politecnica de Aguascalientes 
 </p>
 
- <img src="imagensiete/giphy (1).gif" width="200" p align="right">
+ <img src="imagenocho/giphy.gif" width="300" p align="right">
 
 |        Unidades       | Archivos | 
 |:---------------------:|:--------:|
