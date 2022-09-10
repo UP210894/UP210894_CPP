@@ -1,4 +1,4 @@
-# Repositorio materia de programación 
+# Enrique Abel Herrera Vargas
 <div>
   <p align="center">
   <img src="imagenseis/giphy.gif" width="200"> 
@@ -7,7 +7,7 @@
   </p>
 </div>     
 
-> ## UP210894_CPP </p> Repositorio materia de programación </p>
+> ## Repositorio materia de programación </p> UP210894_CPP </p> 
 
 > ###Soy estudiante de Ingenieria en Sistemas Computacionales de la Universidad Politecnica de Aguascalientes 
 </p>
