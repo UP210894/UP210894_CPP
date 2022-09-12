@@ -7,7 +7,7 @@
   </p>
 </div>     
 
-> ## Enrique Abel Herrera Vargas
+> ## Enrique Abel Herrera Vargas of ISC03B
 > ### I am a student of Computer Systems Engineering at the Polytechnic University of Aguascalientes
 </p>
 
