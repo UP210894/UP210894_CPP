@@ -1,3 +1,9 @@
+/*
+Date: 12/09/2022
+Authot: Erique Abel Herrera Vargas
+Email: up210894@alumnos.upa.edu.mx
+Description: Mi primer porgrama en C++
+*/
 #include <iostream>
 using namespace std;
 
