@@ -11,7 +11,7 @@
 > ### I am a student of Computer Systems Engineering at the Polytechnic University of Aguascalientes
 </p>
 
- <img src="imagens/Gif" width="300" p align="right">
+ <img src="imagens/Gif.gif" width="300" p align="right">
 
 |        Units        |   Files  | 
 |:-------------------:|:--------:|
