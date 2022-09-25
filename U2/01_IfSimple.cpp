@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-    // Declaracion de variables
+    // Declaration of variables
     float rent;
     float tax;
     float total;
