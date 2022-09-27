@@ -1,10 +1,14 @@
 /*Authot: Erique Abel Herrera Vargas
 Email: up210894@alumnos.upa.edu.mx
-Description: Calcula el impositovo de una rent
+Description: Calculate income tax
 */
+
+// Input/Output LIbrary between the screet "n" keyboard
 #include <iostream>
+
 using namespace std;
 
+//-----------MAIN FUNTION---------
 int main()
 {
     // Declaration of variables
@@ -13,7 +17,7 @@ int main()
     float total;
     float totaltax;
 
-    // Soliciar renta al usuario
+    // Request rent to the user
     cout << "Enter your annual income:" << endl;
     cin >> rent;
 
@@ -47,5 +51,6 @@ int main()
     cout << "Your tax will be $" << totaltax << endl;
     cout << "Your total will be $" << total;
 
+    // Return 0 means that teh program ends succesfully
     return 0;
 }

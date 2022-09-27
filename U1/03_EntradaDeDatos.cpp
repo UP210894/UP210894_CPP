@@ -2,7 +2,7 @@
 Date: 20/09/2022
 Authot: Erique Abel Herrera Vargas
 Email: up210894@alumnos.upa.edu.mx
-Description: Entrada de datos
+Description: Data entry
 */
 // Input/Output LIbrary between the screet "n" keyboard
 #include <iostream>
@@ -14,34 +14,36 @@ using namespace std;
 int main()
 {
     // Declaration of variables
-    int entero;
-    float flotante;
-    double grande;
-    char caracter;
+    int whole;
+    float floating;
+    double great;
+    char character;
 
     // Enter and print text on the screen
-    cout << "Ingresa un dato entero: ";
-    cin >> entero;
-    cout << "El dato es: " << entero << endl;
-    cout << "Tamaño del dato entero es : " << sizeof(entero) << " bytes" << endl;
+    cout << "Enter an integer whole: ";
+    cin >> whole;
+    cout << "The data is: " << whole << endl;
+    cout << "Integer data size whole is: " << sizeof(whole) << " bytes" << endl;
     cout << "=================" << endl;
 
-    cout << "Ingresa un dato flotante: ";
-    cin >> flotante;
-    cout << "El dato es: " << flotante << endl;
-    cout << "Tamaño del dato flotante es : " << sizeof(flotante) << " bytes" << endl;
+    cout << "Enter an integer floating: ";
+    cin >>
+        floating;
+    cout << "The data is: " << floating
+         << endl;
+    cout << "Integer data size floatinges: " << sizeof(floating) << " bytes" << endl;
     cout << "=================" << endl;
 
-    cout << "Ingresa un dato double: ";
-    cin >> grande;
-    cout << "El dato es: " << grande << endl;
-    cout << "Tamaño del dato double es : " << sizeof(double) << " bytes" << endl;
+    cout << "Enter an integer great: ";
+    cin >> great;
+    cout << "The data is: " << great << endl;
+    cout << "Integer data size double  is: " << sizeof(double) << " bytes" << endl;
     cout << "=================" << endl;
 
-    cout << "Ingresa un dato char: ";
-    cin >> caracter;
-    cout << "El dato es: " << caracter << endl;
-    cout << "Tamaño del dato char es : " << sizeof(caracter) << " bytes" << endl;
+    cout << "Enter an integer char: ";
+    cin >> character;
+    cout << "The data is: " << character << endl;
+    cout << "Integer data size char es : " << sizeof(character) << " bytes" << endl;
     cout << "=================" << endl;
 
     // Return 0 means that teh program ends succesfully
