@@ -14,30 +14,30 @@ using namespace std;
 int main()
 {
     // Declaration of variables
-    int entero = 1;
-    float flotante = 1.23456789;
-    double grande = 1.23456789;
-    char caracter = 'a';
+    int whole = 1;
+    float floating = 1.23456789;
+    double great = 1.23456789;
+    char character = 'a';
     // Prints on screen a text
-    cout << "Entero: " << entero << endl;
-    cout << "Tamaño del entero es: " << sizeof(entero) << " bytes" << endl;
+    cout << "Intanger: " << whole << endl;
+    cout << "Size of intanger is: " << sizeof(whole) << " bytes" << endl;
     cout << "=================" << endl;
 
-    cout << "Flotante: " << flotante << endl;
-    cout << "Tamaño del flotante es: " << sizeof(flotante) << " bytes" << endl;
+    cout << "Floating: " << floating << endl;
+    cout << "Size of floating is: " << sizeof(floating) << " bytes" << endl;
     cout << "=================" << endl;
 
-    cout << "Double: " << grande << endl;
-    cout << "Tamaño del double es: " << sizeof(grande) << " bytes" << endl;
+    cout << "Double: " << great << endl;
+    cout << "Size of double  is: " << sizeof(great) << " bytes" << endl;
     cout << "=================" << endl;
 
-    cout << "Char: " << caracter << endl;
-    cout << "Tamaño del char es: " << sizeof(caracter) << " bytes" << endl;
+    cout << "Char: " << character << endl;
+    cout << "Size of char is: " << sizeof(character) << " bytes" << endl;
     cout << "=================" << endl;
 
     // Prints on screen a text with printf
-    printf("Entero: %i \n", entero);
-    printf("Flotante: %3.1f \n", flotante);
+    printf("Intanger: %i \n", whole);
+    printf("Floating: %3.1f \n", floating);
 
     // Return 0 means that teh program ends succesfully
     return 0;

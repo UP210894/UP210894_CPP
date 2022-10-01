@@ -12,7 +12,7 @@ Description: Mi primer porgrama en C++
 int main()
 {
     // Prints on screen a text
-    std::cout << "Hola mundo" << std::endl;
+    std::cout << "Hi world" << std::endl;
     // Return 0 means that teh program ends succesfully
     return 0;
 }
