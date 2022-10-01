@@ -7,7 +7,6 @@
 > ## 🦸  I am Enrique Abel Herrera Vargas of ISC03B
 > ## I am a student of Computer Systems Engineering at the Polytechnic University of Aguascalientes and i like to learn about everything i can
 
- <img src="imagenes/Gif.gif" width="300" p align="right">
  <img src="imagens/Gif.gif" width="300" p align="right">
 
 | Units  | Files |
