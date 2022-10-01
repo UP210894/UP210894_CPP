@@ -1,18 +1,14 @@
-> # Programming stuff repository </p> UP210894_CPP </p>  
-  <div>
+> # Programming stuff repository UP210894_CPP
+> ## In this repository you can find my C++ works
   <p align="center">
   <img src="imagens/giphy.gif" width="200"> 
   <img src="imagens/giphy (1).gif" width="200"> 
-  
-  </p>
-</div>     
 
 > ## Enrique Abel Herrera Vargas of ISC03B
 > ### I am a student of Computer Systems Engineering at the Polytechnic University of Aguascalientes
-</p>
 
  <img src="imagenes/Gif.gif" width="300" p align="right">
-  <img src="imagens/Gif.gif" width="300" p align="right">
+ <img src="imagens/Gif.gif" width="300" p align="right">
 
 | Units  | Files |
 | :----: | :---: |
