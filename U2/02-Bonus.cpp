@@ -53,7 +53,7 @@ int main()
             performance = "commendable";
         }
         // Print the results
-        cout << "His performance is " << performance << endl;
+        cout << "Your performance is " << performance << endl;
         cout << "Your bonus is $" << 2400 * qualification << endl;
     }
 

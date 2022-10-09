@@ -5,14 +5,13 @@
 <div align= justify>
 
  ## Exercise 1: Annual tax
-
  ### Problem: Write a program that asks the user for their annual income and shows the corresponding tax on the screen
 
 <div>
 
 <div align= justify>
 
-> ## IMPUT
+> ## INPUT
 
 ```c++ 
     // Request rent to the user
@@ -65,7 +64,356 @@
     }
 ```  
 
+<div>
 
+<div align= justify>
+
+## Explanation 
+
+1.	Input
+    1.1. The program will ask the user how much for rent annually.
+    1.2. The user will enter how much he pays rent annually.
+2.	Process 
+    2.1. With a series of "if's" the program will determine the percentage of rent that the user must pay if the amount of rent payment is $ 0 or more.
+    2.3. If the amount of rent that the user enters does not enter the rengo of $ 0 or more the program through a "else" will show the message "Invalide rent".
+3.	Output 
+    3.1. By means of an "If" the program will determine if it should show the result of the total tax if the user entered a valid amount.
+    3.2. Within the above "if" the program will calculate the final tax.
+    3.3. The program will print the final tax.
+
+--------------------------
+
+<div align= justify>
+
+ ## Exercise 2: Bonus
+ ### Write a program that reads the user's score and indicates their performance level, as well as the amount of money the user will receive
+
+<div>
+
+<div align= justify>
+
+> ## INPUT
+
+```c++ 
+    // Request a rating from the user
+    cout << "Write your rating" << endl;
+    cin >> qualification;
+ ```
+<div align= justify>
+
+> ## PROCCESS
+
+```c++ 
+    // "If" to determine if a valid grade has been entered
+    if ((qualification == 0 || qualification == 0.4 || qualification >= 0.6) && qualification <= 1)
+    {
+        // "If" to determine the final performance of each username
+        if (qualification == 0)
+        {
+            performance = "unacceptable";
+        }
+        else if (qualification == 0.4)
+        {
+            performance = "acceptable";
+        }
+        else if (qualification >= 0.6)
+        {
+            performance = "commendable";
+        }
+        else
+        {
+        cout << "Rating not accepted" << endl;
+        }
+        
+ ```
+<div align= justify>
+
+> ## OUTPUT
+
+```c++ 
+    // Print the results
+        cout << "Your performance is " << performance << endl;
+        cout << "Your bonus is $" << 2400 * qualification << endl;
+    }
+
+    // In case an incorrect qualification is typed, it will show you a message
+    else
+    {
+        cout << "Rating not accepted" << endl;
+    }
+```
+
+<div>
+
+<div align= justify>
+
+## Explanation 
+
+1.	Input
+    1.1. The program will ask the user their rating 
+    1.2. The user will enter his rating.
+2.	Process 
+    2.1. With an "if" the program will determine if the grade entered is valid.
+    2.2. With a series of "if's" the program determine the performance of the user.
+3.	Output 
+    3.1.The program will calculate the bonus that the user will receive.
+    3.2. The program will print the bonus you will receive and the performance that the user had.
+    3.3.If the score entered was not valid, the program never entered the first "If" and will print the message "Rating not accepted". 
+
+---------
+
+<div align= justify>
+
+ ## Exercise 3: Game Room
+ ### Write a program for a company that has game rooms for all ages and wants to automatically calculate the price you should charge your customers for entering.The program must ask the user for the customer's age and display the price of the ticket.
+
+<div>
+
+<div align= justify>
+
+> ## INPUT
+
+```c++ 
+    // Request the age of the user
+    cout << "Enter your age: " << endl;
+    cin >> date;
+ ```
+<div align= justify>
+
+> ## PROCCESS
+
+```c++ 
+    // Determine with an "if" the cost of the entrance
+    if (date >= 0 && date < 4)
+    {
+        cost = 0;
+    }
+    else if (date >= 4 && date <= 18)
+    {
+        cost = 5;
+    }
+    else if (date > 18)
+    {
+        cost = 10;
+    }
+
+    // If age is not valid, you will enter the "else" and show you the following message
+    else
+    {
+        cout << "Enter a valid age" << endl;
+    }
+
+ ```
+<div align= justify>
+
+> ## OUTPUT
+
+```c++ 
+    // "If" to show the final cost message only when a valid age has been entered
+    if (date >= 0)
+    {
+        // Print the results
+        cout << "Its entry cost $" << cost << endl;
+    }
+```
+
+<div>
+
+<div align= justify>
+
+## Explanation 
+
+1.	Input
+    1.1. The program will ask the user their age.
+    1.2.The user will enter his age.
+2.	Process 
+    2.1. With a series of "if's" the program will determine the cost of the user's entrance.
+    2.2. If an option is entered, it invalidates the program with a "else" will display the message "Enter a valida age".
+3.	Output
+    3.1.The program will determine with an "if" if it should show the message with the price of the ticket the user.
+    3.2. The program will print the user's entrance price. 
+ 
+--------------
+
+<div align= justify>
+
+ ## Exercise 4: Pizzeria Menu
+ ### Write a program that asks the user if he wants a vegetarian pizza or not, and based on your answer, show you a menu with the ingredients available for you to choose from. You can only choose one ingredient besides the mozzarella and the tomato that are in all the pizza. At the end it should be shown on the screen if the chosen pizza is vegetarian or not and all the ingredients it carries
+
+<div>
+
+<div align= justify>
+
+> ## INPUT
+
+```c++ 
+    // Ask if the pizza would be vegetarian
+    cout << "Would your pizza be vegetarian?" << endl;
+    cout << "1.- Yes" << endl;
+    cout << "2.- No" << endl;
+    cin >> vegetarian;
+ ```
+<div align= justify>
+
+> ## PROCCESS
+
+```c++ 
+    // "Ifs" is used to determine what type of menu to show you
+    if (vegetarian == 1)
+    {
+        type = "is";
+        cout << "Extra ingredient for your pizza" << endl;
+        cout << "-----Menu-----" << endl;
+        cout << "1.- Pepper" << endl;
+        cout << "2.- Tofu" << endl;
+        cin >> extra;
+
+        // "Ifs" to determine what extra ingredient the pizza will have
+        if (extra == 1)
+        {
+            bonusIngredient = "pepper";
+        }
+        else if (extra == 2)
+        {
+            bonusIngredient = "tofu";
+        }
+        else
+        {
+            cout << "Choose a valid option" << endl;
+        }
+    }
+    else if (vegetarian == 2)
+    {
+        type = "is not";
+        cout << "Extra ingredient for your pizza" << endl;
+        cout << "-----Menu-----" << endl;
+        cout << "1.- Pepperoni" << endl;
+        cout << "2.- Ham" << endl;
+        cout << "3.- Salmon" << endl;
+        cin >> extra;
+
+        // "Ifs" to determine what extra ingredient the pizza will have
+        if (extra == 1)
+        {
+            bonusIngredient = "pepperoni";
+        }
+        else if (extra == 2)
+        {
+            bonusIngredient = "ham";
+        }
+        else if (extra == 3)
+        {
+            bonusIngredient = "salmon";
+        }
+        else
+        {
+            cout << "Choose a valid option" << endl;
+        }
+    }
+    else
+    {
+        cout << "Choose a valid option" << endl;
+    }
+
+ ```
+<div align= justify>
+
+> ## OUTPUT
+
+```c++ 
+    // "If" to show the message of the order placed only when the pizza has been ordered successfully
+    if ((vegetarian == 1 && (extra == 1 || extra == 2)) || (vegetarian == 2 && (extra == 1 || extra == 2 || extra == 3)))
+    {
+
+        // Print the results
+        cout << "Your pizza " << type << " vegetarian and contains mozzarella, tomato and " << bonusIngredient;
+    }
+```
+
+<div>
+
+<div align= justify>
+
+## Explanation 
+
+1.	Entrance
+    1.1. The program will ask if your pizza will be vegetarian or not. 
+    1.2. The user will enter his answer.
+2.	Process 
+    2.1. With a series of "if's" the program will determine which menu it will show depending on the user's response, only in case of having entered a valid option.
+    2.2. When the user can see the menu that corresponds to him, he can choose an extra ingredient.
+    2.3. With a series of nested "if's" the program will save the extra ingredient chosen by the user, only in case he has chosen a valid option.
+3.	Exit 
+    3.1. The program will determine with an "if" if it should display the message with the chosen pizza and its ingredients in case the process has been completed successfully.
+    3.2.The program will print the user's order. 
+
+-----------------
+
+<div align= justify>
+
+ ## Exercise 5: Temperature
+ ### Make a program in whish 6 temperatures are entered and determine the average, the lowest and the highest
+
+<div>
+
+<div align= justify>
+
+> ## INPUT
+
+```c++ 
+    // Ask the user the temperature
+    cout << "What is the termperature ?" << endl;
+    cin >> temperature;
+
+ ```
+<div align= justify>
+
+> ## PROCCESS
+
+```c++ 
+    // "Do While" cycle to take temperature until 6 temperatures are entered
+    do
+    {
+        // Ask the user the temperature
+        cout << "What is the termperature ?" << endl;
+        cin >> temperature;
+
+        // Mathematical operation to determine the average of the total temperatures
+        temperaturesum += temperature;
+
+        // "If" to determine the highest temperature
+        if (temperature >= elderly)
+        {
+            elderly = temperature;
+        }
+
+        // "If" to determine the lowest temperature
+        if (temperature <= minior)
+        {
+            minior = temperature;
+        }
+
+        counter++;
+
+    } while (counter < 6);
+ ```
+
+<div align= justify>
+
+> ## OUTPUT
+
+```c++ 
+    // Print the results
+    cout << "The average temperature is: " << temperaturesum / 6 << " °C" << endl;
+    cout << "The highest temperature is: " << elderly << " °C" << endl;
+    cout << "The lowest temperature is: " << minior << " °C" << endl;
+```
+
+<div>
+
+<div align= justify>
+
+## Explanation 
 
 
 

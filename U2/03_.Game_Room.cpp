@@ -4,8 +4,7 @@ Authot: Erique Abel Herrera Vargas
 Email: up210894@alumnos.upa.edu.mx
 Description: Determinar the cost of entry
 -----Problem-----
-Write a program for a company that has game rooms for all ages and
-You want to automatically calculate the price you should charge your customers for entering. The
+Write a program for a company that has game rooms for all ages and wants to automatically calculate the price you should charge your customers for entering. The
 The program must ask the user for the customer's age and display the price of the ticket. Yes
 the client is under 4 years old can enter for free, if he is between 4 and 18 years old he must pay $5 and
 if you are over 18, $10

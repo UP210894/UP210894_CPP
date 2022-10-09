@@ -24,6 +24,7 @@ int main()
     // "Do While" cycle to take temperature until 6 temperatures are entered
     do
     {
+        // Ask the user the temperature
         cout << "What is the termperature ?" << endl;
         cin >> temperature;
 
