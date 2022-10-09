@@ -8,7 +8,7 @@
 
  ### Problem: Write a program that asks the user for their annual income and shows the corresponding tax on the screen
 
-<div>
+<div align= justify>
 
 > ## IMPUT
 
@@ -17,8 +17,7 @@
     cout << "Enter your annual income:" << endl;
     cin >> rent;
  ```
-
-<div>
+<div align= justify>
 
 > ## PROCCESS
 
@@ -50,8 +49,7 @@
     }
 
  ```
-
-<div>
+<div align= justify>
 
 > ## OUTPUT
 
