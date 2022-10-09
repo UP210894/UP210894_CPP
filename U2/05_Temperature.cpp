@@ -21,17 +21,22 @@ int main()
     int counter = 0;
     float temperature, temperaturesum = 0, elderly = -100000, minior = 100000;
 
-    // Cycle "Do While" to aks the temperature and determine the higuest lowest temperature
+    // "Do While" cycle to take temperature until 6 temperatures are entered
     do
     {
         cout << "What is the termperature ?" << endl;
         cin >> temperature;
+
+        // Mathematical operation to determine the average of the total temperatures
         temperaturesum += temperature;
 
+        // "If" to determine the highest temperature
         if (temperature >= elderly)
         {
             elderly = temperature;
         }
+
+        // "If" to determine the lowest temperature
         if (temperature <= minior)
         {
             minior = temperature;
@@ -43,7 +48,7 @@ int main()
 
     // Print the results
     cout << "The average temperature is: " << temperaturesum / 6 << " °C" << endl;
-    cout << "The highest temperature is: " << elderly << " °C" <<  endl;
+    cout << "The highest temperature is: " << elderly << " °C" << endl;
     cout << "The lowest temperature is: " << minior << " °C" << endl;
 
     // Return 0 means that the program ends succesfully

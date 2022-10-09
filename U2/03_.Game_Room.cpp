@@ -27,6 +27,7 @@ int main()
     // Request the age of the user
     cout << "Enter your age: " << endl;
     cin >> date;
+
     // Determine with an "if" the cost of the entrance
     if (date >= 0 && date < 4)
     {
@@ -46,8 +47,13 @@ int main()
     {
         cout << "Enter a valid age" << endl;
     }
-    // Show the final cost
-    cout << "Its entry cost $" << cost << endl;
+
+    // "If" to show the final cost message only when a valid age has been entered
+    if (date >= 0)
+    {
+        // Print the results
+        cout << "Its entry cost $" << cost << endl;
+    }
 
     // Return 0 means that the program ends succesfully
     return 0;

@@ -26,68 +26,79 @@ using namespace std;
 int main()
 {
     // Declaration of variables
-    int vegetariana, extra;
-    string extras, ingredientes;
+    int vegetarian, extra;
+    string bonusIngredient, type;
 
     // Ask if the pizza would be vegetarian
-    cout << "Su pizza seria vegetariana" << endl;
-    cout << "1.- Si" << endl;
+    cout << "Would your pizza be vegetarian?" << endl;
+    cout << "1.- Yes" << endl;
     cout << "2.- No" << endl;
-    cin >> vegetariana;
+    cin >> vegetarian;
 
-    // "If" is used to determine what type of menu to show you
-    if (vegetariana == 1)
+    // "Ifs" is used to determine what type of menu to show you
+    if (vegetarian == 1)
     {
-        ingredientes = "si";
-        cout << "Ingrediente extra para su pizza" << endl;
+        type = "is";
+        cout << "Extra ingredient for your pizza" << endl;
         cout << "-----Menu-----" << endl;
-        cout << "1.- Pimiento" << endl;
-        cout << "2.- Atun" << endl;
+        cout << "1.- Pepper" << endl;
+        cout << "2.- Tofu" << endl;
         cin >> extra;
-        if (extra = 1)
+
+        // "Ifs" to determine what extra ingredient the pizza will have
+        if (extra == 1)
         {
-            extras = "pimienta";
+            bonusIngredient = "pepper";
         }
         else if (extra == 2)
         {
-            extras = "atun";
+            bonusIngredient = "tofu";
         }
         else
         {
-            cout << "Eliga una opcion valida" << endl;
+            cout << "Choose a valid option" << endl;
         }
     }
-    else if (vegetariana == 2)
+    else if (vegetarian == 2)
     {
-        ingredientes = "no";
-        cout << "Ingrediente extra para su pizza" << endl;
+        type = "is not";
+        cout << "Extra ingredient for your pizza" << endl;
         cout << "-----Menu-----" << endl;
-        cout << "1.- Peperoni" << endl;
-        cout << "2.- Jamon" << endl;
+        cout << "1.- Pepperoni" << endl;
+        cout << "2.- Ham" << endl;
         cout << "3.- Salmon" << endl;
         cin >> extra;
+
+        // "Ifs" to determine what extra ingredient the pizza will have
         if (extra == 1)
         {
-            extras = "peperoni";
+            bonusIngredient = "pepperoni";
         }
         else if (extra == 2)
         {
-            extras = "jamon";
+            bonusIngredient = "ham";
         }
         else if (extra == 3)
         {
-            extras = "salmon";
+            bonusIngredient = "salmon";
         }
         else
         {
-            cout << "Eliga una opcion valida" << endl;
+            cout << "Choose a valid option" << endl;
         }
     }
     else
     {
-        cout << "Eliga una opcion valida" << endl;
+        cout << "Choose a valid option" << endl;
     }
-    cout << "Su pizza " << ingredientes << " es vegetariana con mozzarella, tomate y " << extras;
+
+    // "If" to show the message of the order placed only when the pizza has been ordered successfully
+    if ((vegetarian == 1 && (extra == 1 || extra == 2)) || (vegetarian == 2 && (extra == 1 || extra == 2 || extra == 3)))
+    {
+
+        // Print the results
+        cout << "Your pizza " << type << " vegetarian and contains mozzarella, tomato and " << bonusIngredient;
+    }
 
     // Return 0 means that the program ends succesfully
     return 0;
