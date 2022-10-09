@@ -2,11 +2,13 @@
 
  # Unit 2 "Control structures and cycles"
 
- ## Exercise 1: Annual tax
-
 <div align= justify>
 
+ ## Exercise 1: Annual tax
+
  ### Problem: Write a program that asks the user for their annual income and shows the corresponding tax on the screen
+
+<div>
 
 <div align= justify>
 
