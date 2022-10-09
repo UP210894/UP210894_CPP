@@ -63,6 +63,7 @@
         cout << "Your tax will be a percentage of " << (tax * 100) << "%" << endl;
         cout << "Your tax will be $" << rent * tax << endl;
     }
+```  
 
 
 
