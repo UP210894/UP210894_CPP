@@ -25,6 +25,7 @@ int main()
     // Cycle "Do While" to ask to type a decimal number while not typing a positive decimal number
     do
     {
+        // Enter a decimal number
         cout << "Type a number: ";
         cin >> decimal;
 

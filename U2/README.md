@@ -415,13 +415,212 @@
 
 ## Explanation 
 
+1. Entrance
+    1.1. The program will ask the user the temperature 6 times by means of a "do while"
+    1.2. The user enters the temperature
+2. Process 
+    2.1. The program adds all the temperatures entered in the variable "temperature".
+    2.2. The program with two "if's" compares the newly entered temperature with the current highest and lowest temperature.
+3. Exit 
+    3.1. The program calculates the average temperatures and prints the final result,
+    3.2. The program prints the highest and lowest final temperature. 
 
+-----------------------
 
+<div align= justify>
 
-
-
-
-
-
+ ## Exercise 6: Number of Products
+ ### Make a program that reads indefinitely quantities of products and their price, and at the end indicates the total of the invoice. To know that the purchase has been completed, a 0 must be entered in the quantily.
  
+<div>
+
+<div align= justify>
+
+> ## INPUT
+
+```c++ 
+    // Enter number of products to be purchased 
+        cout << "Quantity of products: " << endl;
+        cin >> products;
+
+        // Enter the price of the products
+            cout << "Individual product price: $" << endl;
+            cin >> price;
+            invoice += (products * price);
+
+ ```
+<div align= justify>
+
+> ## PROCCESS
+
+```c++ 
+    do
+    {
+        // Enter number of products to be purchased
+        cout << "Quantity of products: " << endl;
+        cin >> products;
+
+        // "Ifs" ​​to determine the operation to perform depending on the number of products entered
+        if (products > 0)
+        {
+            // Enter the price of the products
+            cout << "Individual product price: $" << endl;
+            cin >> price;
+            invoice += (products * price);
+        }
+        else if (products == 0)
+        {
+            cout << "Exit";
+        }
+        else
+        {
+            cout << "Invalid quantity of products, enter a valid quantity" << endl;
+        }
+
+    } while (products != 0);
+ ```
+
+<div align= justify>
+
+> ## OUTPUT
+
+```c++ 
+    // Print the results
+    cout << "The total to be billed si: $" << invoice << endl;
+```
+
+<div>
+
+<div align= justify>
+
+## Explanation 
+
+---------------
+
+<div align= justify>
+
+ ## Exercise 7: Decimal to binary
+ ### Write a program that performs the conversion from decimal to binary, only for integer greater than 0. The result can be displayed as an integer variable or in a set of character.
  
+<div>
+
+<div align= justify>
+
+> ## INPUT
+
+```c++ 
+    // Enter a decimal number
+        cout << "Type a number: ";
+        cin >> decimal;
+
+ ```
+<div align= justify>
+
+> ## PROCCESS
+
+```c++ 
+    / Cycle "Do While" to ask to type a decimal number while not typing a positive decimal number
+    do
+    {
+        // Enter a decimal number
+        cout << "Type a number: ";
+        cin >> decimal;
+
+        // "If" to enter a while loop if a positive decimal number is entered
+        if (decimal > 0)
+        {
+            // "While" to convert the decimal variable to a positive number as long as the number is greater than 0
+            while (decimal > 0)
+            {
+                result = to_string(decimal % 2) + result;
+                decimal /= 2;
+            }
+        }
+        else if (decimal == 0)
+        {
+            result = '0';
+        }
+        else
+        {
+            cout << "Type a positive number";
+        }
+
+    } while (decimal < 0);
+
+ ```
+
+<div align= justify>
+
+> ## OUTPUT
+
+```c++ 
+    // Print the results
+    cout << "Decimal number converted to binary: " << result;
+```
+
+<div>
+
+<div align= justify>
+
+## Explanation 
+
+-------------
+
+<div align= justify>
+
+ ## Exercise 8: Decimal to binary
+ ### Write a program that performs the conversion from decimal to binary, only for integer greater than 0. The result can be displayed as an integer variable or in a set of character.
+ 
+<div>
+
+<div align= justify>
+
+> ## INPUT
+
+```c++ 
+    // Enter what number your multiplication table will be and what number your multiplication tabla will reach
+    cout << "Enter until you want your multiplication table to arrive" << endl;
+    cin >> counter;
+    cout << "Enter that number will be your multiplication board" << endl;
+    cin >> table;
+ ```
+<div align= justify>
+
+> ## PROCCESS
+
+```c++ 
+    // "For" loopto place multiple hyphens
+    for (int line = 0; line <= 48; line++)
+    {
+        cout << "-";
+    }
+    cout << endl;
+
+    // Loop "for" to print the results of the multiplication table
+    for (int estar = 1; estar <= counter; estar++)
+    {
+        cout << "|\t" << estar << "\tx\t" << table << "\t=\t" << estar * table << "\t|" << endl;
+
+        // "For" loopto place multiple hyphens
+        for (int line = 0; line <= 48; line++)
+        {
+            cout << "-";
+        }
+        cout << endl;
+    }
+ ```
+
+<div align= justify>
+
+> ## OUTPUT
+
+```c++ 
+    // Print the results
+    cout << "|\t" << estar << "\tx\t" << table << "\t=\t" << estar * table << "\t|" << endl;
+```
+
+<div>
+
+<div align= justify>
+
+## Explanation 

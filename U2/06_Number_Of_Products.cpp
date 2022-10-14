@@ -31,12 +31,14 @@ int main()
     */
     do
     {
+        // Enter number of products to be purchased
         cout << "Quantity of products: " << endl;
         cin >> products;
 
         // "Ifs" ​​to determine the operation to perform depending on the number of products entered
         if (products > 0)
         {
+            // Enter the price of the products
             cout << "Individual product price: $" << endl;
             cin >> price;
             invoice += (products * price);
