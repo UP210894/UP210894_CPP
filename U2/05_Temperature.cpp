@@ -2,7 +2,7 @@
 Date: 03/10/2022
 Authot: Erique Abel Herrera Vargas
 Email: up210894@alumnos.upa.edu.mx
-Description: Cycle "Do While" to ask temperature
+Description: Loop "do while" to ask temperature
 -----Problem-----
 Make a program in whish 6 temperatures are entered and determine the average,
  the lowest and the highest

@@ -2,7 +2,7 @@
 Date: 07/10/2022
 Authot: Erique Abel Herrera Vargas
 Email: up210894@alumnos.upa.edu.mx
-Description: Cycle "Do While" to calculate the total amount of the bill
+Description: Loop "do while" to convert a decimal number to an integer
 -----Problem-----
 Write a program that performs the conversion from decimal to binary, only for
 integer greater than 0. The result can be displayed as an integer variable or

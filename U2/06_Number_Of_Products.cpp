@@ -2,7 +2,7 @@
 Date: 05/10/2022
 Authot: Erique Abel Herrera Vargas
 Email: up210894@alumnos.upa.edu.mx
-Description: Cycle "Do While" to calculate the total amount of the bill
+Description: Loop "do while" to calculate the total amount of the bill
 -----Problem-----
 Make a program that reads indefinitely quantities of products and their price, and at the end
 indicates the total of the invoice. To know that the purchase has been completed, a 0 must be

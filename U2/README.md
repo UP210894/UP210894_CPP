@@ -336,14 +336,14 @@
 
 ## Explanation 
 
-1.	Entrance
+1.	Input
     1.1. The program will ask if your pizza will be vegetarian or not. 
     1.2. The user will enter his answer.
 2.	Process 
     2.1. With a series of "if's" the program will determine which menu it will show depending on the user's response, only in case of having entered a valid option.
     2.2. When the user can see the menu that corresponds to him, he can choose an extra ingredient.
     2.3. With a series of nested "if's" the program will save the extra ingredient chosen by the user, only in case he has chosen a valid option.
-3.	Exit 
+3.	Output
     3.1. The program will determine with an "if" if it should display the message with the chosen pizza and its ingredients in case the process has been completed successfully.
     3.2.The program will print the user's order. 
 
@@ -415,13 +415,13 @@
 
 ## Explanation 
 
-1. Entrance
+1. Input
     1.1. The program will ask the user the temperature 6 times by means of a "do while"
     1.2. The user enters the temperature
 2. Process 
     2.1. The program adds all the temperatures entered in the variable "temperature".
     2.2. The program with two "if's" compares the newly entered temperature with the current highest and lowest temperature.
-3. Exit 
+3. Output
     3.1. The program calculates the average temperatures and prints the final result,
     3.2. The program prints the highest and lowest final temperature. 
 
@@ -439,7 +439,7 @@
 > ## INPUT
 
 ```c++ 
-    // Enter number of products to be purchased 
+        // Enter number of products to be purchased 
         cout << "Quantity of products: " << endl;
         cin >> products;
 
@@ -494,6 +494,18 @@
 <div align= justify>
 
 ## Explanation 
+
+1. Entrance
+1.1. The program will ask the user how many items he will buy by means of a "do while" cycle.
+1.2. The user enters will go the number of products he will buy 
+1.3. The user will enter the individual price of the product 
+2. Process 
+2.1. The program through "If's" will determine if the user wants to continue entering products, if he wishes the program will ask the individual price of the product and multiply it by the number of products he has entered.
+2.2. The program will add up the total of all purchases.
+2.3. If the user enters a "0" in the number of products he compares, the program will exit the "do while" cycle.
+2.4. If the user enters a negative number in the number of products compared by the program, it will indicate that the number entered is an invalid amount. 
+3. Exit 
+3.1. The program prints the total purchase. 
 
 ---------------
 
@@ -564,12 +576,22 @@
 
 ## Explanation 
 
+1. Input
+1.1. The program will ask the user to enter a tenth number by cycle “do while"
+1.2. The user enters the decimal number. 
+2. Process 
+2.1. The program through "If's" will determine if the user entered a positive number.
+2.2. If the user will enter a positive number, the program will enter a "while" cycle where it will divide the number by 2 and concatenate the residue of each division. 
+2.2. If the user will enter a negative number the program will ask him to enter a positive number.
+3. Output
+3.1. The program prints the final result.
+
 -------------
 
 <div align= justify>
 
- ## Exercise 8: Decimal to binary
- ### Write a program that performs the conversion from decimal to binary, only for integer greater than 0. The result can be displayed as an integer variable or in a set of character.
+ ## Exercise 8: Multiplication table
+ ### Write a program that prints the multiplication table you want up to the number you want.
  
 <div>
 
@@ -595,18 +617,41 @@
         cout << "-";
     }
     cout << endl;
-
-    // Loop "for" to print the results of the multiplication table
-    for (int estar = 1; estar <= counter; estar++)
+    // "If" to determine if the multiplication table will be positive or negative numbers
+    if (counter >= 0)
     {
-        cout << "|\t" << estar << "\tx\t" << table << "\t=\t" << estar * table << "\t|" << endl;
 
-        // "For" loopto place multiple hyphens
-        for (int line = 0; line <= 48; line++)
+        // Loop "for" to print the results of the multiplication table
+        for (int estar = 1; estar <= counter; estar++)
         {
-            cout << "-";
+            // Print the results
+            cout << "|\t" << estar << "\tx\t" << table << "\t=\t" << estar * table << "\t|" << endl;
+
+            // "For" loopto place multiple hyphens
+            for (int line = 0; line <= 48; line++)
+            {
+                cout << "-";
+            }
+            cout << endl;
         }
-        cout << endl;
+    }
+
+    if (counter < 0)
+    {
+
+        // Loop "for" to print the results of the multiplication table
+        for (int estar = -1; estar >= counter; estar--)
+        {
+            // Print the results
+            cout << "|\t" << estar << "\tx\t" << table << "\t=\t" << estar * table << "\t|" << endl;
+
+            // "For" loopto place multiple hyphens
+            for (int line = 0; line <= 48; line++)
+            {
+                cout << "-";
+            }
+            cout << endl;
+        }
     }
  ```
 
@@ -624,3 +669,14 @@
 <div align= justify>
 
 ## Explanation 
+
+1. Input
+1.1. The program will ask the user until what number he wants his multiplication table to arrive.
+1.2. The user enters up to the number that his multiplication table will arrive.
+1.3. The program will ask the user what number his multiplication table will be. 
+1.4. The user enters what number will be his multiplication table.
+2. Process 
+2.1. The program through an "If" will determine if the table multiplies negative or positive numbers.
+2.2. The program through a "for" will perform all the multiplications of the multiplication table.
+3. Output
+3.1. The program through a "for" will print the multiplication table at the same time that performs each of the multiplications.
