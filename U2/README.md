@@ -46,7 +46,7 @@
     }
     else
     {
-        cout << "Invalid rent";
+        cout << "Invalid rent" << endl;
     }
 
  ```
@@ -346,7 +346,7 @@
     {
 
         // Print the results
-        cout << "Your pizza " << type << " vegetarian and contains mozzarella, tomato and " << bonusIngredient;
+        cout << "Your pizza " << type << " vegetarian and contains mozzarella, tomato and " << bonusIngredient << endl;
     }
 ```
 
@@ -563,7 +563,7 @@
 
 ```c++ 
     // Enter a decimal number
-        cout << "Type a number: ";
+        cout << "Type a number: " << endl;
         cin >> decimal;
 
  ```
@@ -576,7 +576,7 @@
     do
     {
         // Enter a decimal number
-        cout << "Type a number: ";
+        cout << "Type a number: " << endl;
         cin >> decimal;
 
         // "If" to enter a while loop if a positive decimal number is entered
@@ -595,7 +595,7 @@
         }
         else
         {
-            cout << "Type a positive number";
+            cout << "Type a positive number" << endl;
         }
 
     } while (decimal < 0);

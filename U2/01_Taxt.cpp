@@ -58,7 +58,7 @@ int main()
     }
     else
     {
-        cout << "Invalid rent";
+        cout << "Invalid rent" << endl;
     }
 
     // "If" to determine when to display the results

@@ -26,7 +26,7 @@ int main()
     do
     {
         // Enter a decimal number
-        cout << "Type a number: ";
+        cout << "Type a number: " << endl;
         cin >> decimal;
 
         // "If" to enter a while loop if a positive decimal number is entered
@@ -45,13 +45,13 @@ int main()
         }
         else
         {
-            cout << "Type a positive number";
+            cout << "Type a positive number" << endl;
         }
 
     } while (decimal < 0);
 
     // Print the results
-    cout << "Decimal number converted to binary: " << result;
+    cout << "Decimal number converted to binary: " << result << endl;
 
     // Return 0 means that the program ends succesfully
     return 0;

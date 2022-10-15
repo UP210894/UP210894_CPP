@@ -8,7 +8,7 @@ The Bella Napoli pizzeria offers vegetarian and non-vegetarian pizzas to its cus
 Ingredients for each type of pizza are listed below.
     -Vegetarian ingredients: Pepper and tofu.
     -Non-vegetarian ingredients: Pepperoni, Ham and Salmon.
-Write a program that asks the user if he wants a vegetarian pizza or not, and based on your answer, 
+Write a program that asks the user if he wants a vegetarian pizza or not, and based on your answer,
 show you a menu with the ingredients available for you to choose from.
 You can only choose one ingredient besides the mozzarella and the tomato that are in all the
 pizza.
@@ -97,7 +97,7 @@ int main()
     {
 
         // Print the results
-        cout << "Your pizza " << type << " vegetarian and contains mozzarella, tomato and " << bonusIngredient;
+        cout << "Your pizza " << type << " vegetarian and contains mozzarella, tomato and " << bonusIngredient << endl;
     }
 
     // Return 0 means that the program ends succesfully
