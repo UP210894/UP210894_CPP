@@ -4,7 +4,7 @@
 
 <div align= justify>
 
- ## Exercise 1: Annual tax
+ # Exercise 1: Annual tax
  ### Problem: Write a program that asks the user for their annual income and shows the corresponding tax on the screen
 
 <div>
@@ -71,21 +71,28 @@
 ## Explanation 
 
 1.	Input
+
     1.1. The program will ask the user how much for rent annually.
+
     1.2. The user will enter how much he pays rent annually.
 2.	Process 
+
     2.1. With a series of "if's" the program will determine the percentage of rent that the user must pay if the amount of rent payment is $ 0 or more.
+    
     2.3. If the amount of rent that the user enters does not enter the rengo of $ 0 or more the program through a "else" will show the message "Invalide rent".
 3.	Output 
+    
     3.1. By means of an "If" the program will determine if it should show the result of the total tax if the user entered a valid amount.
+    
     3.2. Within the above "if" the program will calculate the final tax.
+    
     3.3. The program will print the final tax.
 
 --------------------------
 
 <div align= justify>
 
- ## Exercise 2: Bonus
+ # Exercise 2: Bonus
  ### Write a program that reads the user's score and indicates their performance level, as well as the amount of money the user will receive
 
 <div>
@@ -150,21 +157,28 @@
 ## Explanation 
 
 1.	Input
+    
     1.1. The program will ask the user their rating 
+    
     1.2. The user will enter his rating.
 2.	Process 
+    
     2.1. With an "if" the program will determine if the grade entered is valid.
+   
     2.2. With a series of "if's" the program determine the performance of the user.
 3.	Output 
+    
     3.1.The program will calculate the bonus that the user will receive.
+    
     3.2. The program will print the bonus you will receive and the performance that the user had.
+    
     3.3.If the score entered was not valid, the program never entered the first "If" and will print the message "Rating not accepted". 
 
 ---------
 
 <div align= justify>
 
- ## Exercise 3: Game Room
+ # Exercise 3: Game Room
  ### Write a program for a company that has game rooms for all ages and wants to automatically calculate the price you should charge your customers for entering.The program must ask the user for the customer's age and display the price of the ticket.
 
 <div>
@@ -224,20 +238,26 @@
 ## Explanation 
 
 1.	Input
+    
     1.1. The program will ask the user their age.
+    
     1.2.The user will enter his age.
 2.	Process 
+    
     2.1. With a series of "if's" the program will determine the cost of the user's entrance.
+    
     2.2. If an option is entered, it invalidates the program with a "else" will display the message "Enter a valida age".
 3.	Output
+    
     3.1.The program will determine with an "if" if it should show the message with the price of the ticket the user.
+    
     3.2. The program will print the user's entrance price. 
  
 --------------
 
 <div align= justify>
 
- ## Exercise 4: Pizzeria Menu
+ # Exercise 4: Pizzeria Menu
  ### Write a program that asks the user if he wants a vegetarian pizza or not, and based on your answer, show you a menu with the ingredients available for you to choose from. You can only choose one ingredient besides the mozzarella and the tomato that are in all the pizza. At the end it should be shown on the screen if the chosen pizza is vegetarian or not and all the ingredients it carries
 
 <div>
@@ -337,21 +357,28 @@
 ## Explanation 
 
 1.	Input
+    
     1.1. The program will ask if your pizza will be vegetarian or not. 
+    
     1.2. The user will enter his answer.
 2.	Process 
+    
     2.1. With a series of "if's" the program will determine which menu it will show depending on the user's response, only in case of having entered a valid option.
+    
     2.2. When the user can see the menu that corresponds to him, he can choose an extra ingredient.
+    
     2.3. With a series of nested "if's" the program will save the extra ingredient chosen by the user, only in case he has chosen a valid option.
 3.	Output
+    
     3.1. The program will determine with an "if" if it should display the message with the chosen pizza and its ingredients in case the process has been completed successfully.
+    
     3.2.The program will print the user's order. 
 
 -----------------
 
 <div align= justify>
 
- ## Exercise 5: Temperature
+ # Exercise 5: Temperature
  ### Make a program in whish 6 temperatures are entered and determine the average, the lowest and the highest
 
 <div>
@@ -416,20 +443,26 @@
 ## Explanation 
 
 1. Input
+    
     1.1. The program will ask the user the temperature 6 times by means of a "do while"
+    
     1.2. The user enters the temperature
 2. Process 
+    
     2.1. The program adds all the temperatures entered in the variable "temperature".
+    
     2.2. The program with two "if's" compares the newly entered temperature with the current highest and lowest temperature.
 3. Output
+    
     3.1. The program calculates the average temperatures and prints the final result,
+    
     3.2. The program prints the highest and lowest final temperature. 
 
 -----------------------
 
 <div align= justify>
 
- ## Exercise 6: Number of Products
+ # Exercise 6: Number of Products
  ### Make a program that reads indefinitely quantities of products and their price, and at the end indicates the total of the invoice. To know that the purchase has been completed, a 0 must be entered in the quantily.
  
 <div>
@@ -496,22 +529,30 @@
 ## Explanation 
 
 1. Entrance
-1.1. The program will ask the user how many items he will buy by means of a "do while" cycle.
-1.2. The user enters will go the number of products he will buy 
-1.3. The user will enter the individual price of the product 
+    
+    1.1. The program will ask the user how many items he will buy by means of a "do while" cycle.
+    
+    1.2. The user enters will go the number of products he will buy 
+    
+    1.3. The user will enter the individual price of the product 
 2. Process 
-2.1. The program through "If's" will determine if the user wants to continue entering products, if he wishes the program will ask the individual price of the product and multiply it by the number of products he has entered.
-2.2. The program will add up the total of all purchases.
-2.3. If the user enters a "0" in the number of products he compares, the program will exit the "do while" cycle.
-2.4. If the user enters a negative number in the number of products compared by the program, it will indicate that the number entered is an invalid amount. 
+    
+    2.1. The program through "If's" will determine if the user wants to continue entering products, if he wishes the program will ask the individual price of the product and multiply it by the number of products he has entered.
+    
+    2.2. The program will add up the total of all purchases.
+    
+    2.3. If the user enters a "0" in the number of products he compares, the program will exit the "do while" cycle.
+    
+    2.4. If the user enters a negative number in the number of products compared by the program, it will indicate that the number entered is an invalid amount. 
 3. Exit 
-3.1. The program prints the total purchase. 
+    
+    3.1. The program prints the total purchase. 
 
 ---------------
 
 <div align= justify>
 
- ## Exercise 7: Decimal to binary
+ # Exercise 7: Decimal to binary
  ### Write a program that performs the conversion from decimal to binary, only for integer greater than 0. The result can be displayed as an integer variable or in a set of character.
  
 <div>
@@ -577,20 +618,26 @@
 ## Explanation 
 
 1. Input
-1.1. The program will ask the user to enter a tenth number by cycle “do while"
-1.2. The user enters the decimal number. 
+    
+    1.1. The program will ask the user to enter a tenth number by cycle “do while"
+    
+    1.2. The user enters the decimal number. 
 2. Process 
-2.1. The program through "If's" will determine if the user entered a positive number.
-2.2. If the user will enter a positive number, the program will enter a "while" cycle where it will divide the number by 2 and concatenate the residue of each division. 
-2.2. If the user will enter a negative number the program will ask him to enter a positive number.
+    
+    2.1. The program through "If's" will determine if the user entered a positive number.
+    
+    2.2. If the user will enter a positive number, the program will enter a "while" cycle where it will divide the number by 2 and concatenate the residue of each division. 
+    
+    2.2. If the user will enter a negative number the program will ask him to enter a positive number.
 3. Output
-3.1. The program prints the final result.
+    
+    3.1. The program prints the final result.
 
 -------------
 
 <div align= justify>
 
- ## Exercise 8: Multiplication table
+ # Exercise 8: Multiplication table
  ### Write a program that prints the multiplication table you want up to the number you want.
  
 <div>
@@ -671,12 +718,19 @@
 ## Explanation 
 
 1. Input
-1.1. The program will ask the user until what number he wants his multiplication table to arrive.
-1.2. The user enters up to the number that his multiplication table will arrive.
-1.3. The program will ask the user what number his multiplication table will be. 
-1.4. The user enters what number will be his multiplication table.
+    
+    1.1. The program will ask the user until what number he wants his multiplication table to arrive.
+    
+    1.2. The user enters up to the number that his multiplication table will arrive.
+    
+    1.3. The program will ask the user what number his multiplication table will be. 
+    
+    1.4. The user enters what number will be his multiplication table.
 2. Process 
-2.1. The program through an "If" will determine if the table multiplies negative or positive numbers.
-2.2. The program through a "for" will perform all the multiplications of the multiplication table.
+    
+    2.1. The program through an "If" will determine if the table multiplies negative or positive numbers.
+    
+    2.2. The program through a "for" will perform all the multiplications of the multiplication table.
 3. Output
-3.1. The program through a "for" will print the multiplication table at the same time that performs each of the multiplications.
+    
+    3.1. The program through a "for" will print the multiplication table at the same time that performs each of the multiplications.
