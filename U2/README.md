@@ -68,7 +68,7 @@
 
 <div align= justify>
 
-## Explanation 
+> ## Explanation 
 
 1.	Input
 
@@ -88,7 +88,36 @@
     
     3.3. The program will print the final tax.
 
---------------------------
+<div>
+
+<div align= justify>
+
+> ## Texts 
+
+### 1) Rent < 0
+
+<img src="../imagens\Imagenes_Readme2\1.1.png" align = "center" height = "150" width="850"/>
+
+### 2) Rent >= 0 && Rent < 10000
+
+<img src="../imagens\Imagenes_Readme2\1.2.png" align = "center" height = "150" width="850"/>
+
+### 3) Rent >= 10000 && Rent < 20000
+
+<img src="../imagens\Imagenes_Readme2\1.3.png" align = "center" height = "150" width="850"/>
+
+### 4) Rent >= 20000 && Rent < 35000
+
+<img src="../imagens\Imagenes_Readme2\1.4.png" align = "center" height = "150" width="850"/>
+
+### 5) Rent >= 35000 && Rent < 60000
+
+<img src="../imagens\Imagenes_Readme2\1.5.png" align = "center" height = "150" width="850"/>
+
+### 6) Rent >= 60000
+
+<img src="../imagens\Imagenes_Readme2\1.6.png" align = "center" height = "150" width="850"/>
+---------------------------------------------------------------
 
 <div align= justify>
 
@@ -174,7 +203,29 @@
     
     3.3.If the score entered was not valid, the program never entered the first "If" and will print the message "Rating not accepted". 
 
----------
+<div>
+
+<div align= justify>
+
+> ## Texts 
+
+### 1) Qualification < 0 && Qualification > 1
+
+<img src="../imagens\Imagenes_Readme2\2.1.png" align = "center" height = "150" width="850"/>
+
+### 2) Qualification == 0
+
+<img src="../imagens\Imagenes_Readme2\2.2.png" align = "center" height = "150" width="850"/>
+
+### 3) Qualification == 4
+
+<img src="../imagens\Imagenes_Readme2\2.3.png" align = "center" height = "150" width="850"/>
+
+### 4) Qualification >= 6 && Qualification <= 1
+
+<img src="../imagens\Imagenes_Readme2\2.4.png" align = "center" height = "150" width="850"/>
+
+---------------------------------------------------------------
 
 <div align= justify>
 
@@ -252,8 +303,30 @@
     3.1.The program will determine with an "if" if it should show the message with the price of the ticket the user.
     
     3.2. The program will print the user's entrance price. 
+
+<div>
+
+<div align= justify>
+
+> ## Texts 
+
+### 1) Date < 0
+
+<img src="../imagens\Imagenes_Readme2\3.1.png" align = "center" height = "150" width="850"/>
+
+### 2) Date >= 0 && Date < 4
+
+<img src="../imagens\Imagenes_Readme2\3.2.png" align = "center" height = "150" width="850"/>
+
+### 3) Date >= 4 && Date <= 18
+
+<img src="../imagens\Imagenes_Readme2\3.3.png" align = "center" height = "150" width="850"/>
+
+### 4) Date > 18
+
+<img src="../imagens\Imagenes_Readme2\3.4.png" align = "center" height = "150" width="850"/>
  
---------------
+---------------------------------------------------------------
 
 <div align= justify>
 
@@ -374,7 +447,37 @@
     
     3.2.The program will print the user's order. 
 
------------------
+<div>
+
+<div align= justify>
+
+> ## Texts 
+
+### 1) Invalid option
+
+<img src="../imagens\Imagenes_Readme2\4.1.png" align = "center" height = "150" width="850"/>
+
+### 2) Vegetarian whit pepper
+
+<img src="../imagens\Imagenes_Readme2\4.2.png" align = "center" height = "150" width="850"/>
+
+### 3) Vegetarian whit tofu
+
+<img src="../imagens\Imagenes_Readme2\4.3.png" align = "center" height = "150" width="850"/>
+
+### 4) No vegetarian whit pepperoni
+
+<img src="../imagens\Imagenes_Readme2\4.4.png" align = "center" height = "150" width="850"/>
+
+### 5) No vegetarian whit ham
+
+<img src="../imagens\Imagenes_Readme2\4.5.png" align = "center" height = "150" width="850"/>
+
+### 6) No vegetarian whit salmon
+
+<img src="../imagens\Imagenes_Readme2\4.6.png" align = "center" height = "150" width="850"/>
+
+---------------------------------------------------------------
 
 <div align= justify>
 
@@ -458,7 +561,17 @@
     
     3.2. The program prints the highest and lowest final temperature. 
 
------------------------
+<div>
+
+<div align= justify>
+
+> ## Texts 
+
+### 1) 6 temperatures
+
+<img src="../imagens\Imagenes_Readme2\5.1.png" align = "center" height = "150" width="850"/>
+
+---------------------------------------------------------------
 
 <div align= justify>
 
@@ -548,7 +661,21 @@
     
     3.1. The program prints the total purchase. 
 
----------------
+<div>
+
+<div align= justify>
+
+> ## Texts 
+
+### 1) Invalid products
+
+<img src="../imagens\Imagenes_Readme2\6.1.png" align = "center" height = "150" width="850"/>
+
+### 1) Products
+
+<img src="../imagens\Imagenes_Readme2\6.2.png" align = "center" height = "150" width="850"/>
+
+---------------------------------------------------------------
 
 <div align= justify>
 
@@ -633,7 +760,25 @@
     
     3.1. The program prints the final result.
 
--------------
+<div>
+
+<div align= justify>
+
+> ## Texts 
+
+### 1) Negative number
+
+<img src="../imagens\Imagenes_Readme2\7.1.png" align = "center" height = "150" width="850"/>
+
+### 2) Number 0
+
+<img src="../imagens\Imagenes_Readme2\7.2.png" align = "center" height = "150" width="850"/>
+
+### 2) Positive number
+
+<img src="../imagens\Imagenes_Readme2\7.3.png" align = "center" height = "150" width="850"/>
+
+---------------------------------------------------------------
 
 <div align= justify>
 
@@ -734,3 +879,19 @@
 3. Output
     
     3.1. The program through a "for" will print the multiplication table at the same time that performs each of the multiplications.
+
+<div>
+
+<div align= justify>
+
+> ## Texts 
+
+### 1) Multiplication table of positive numbers
+
+<img src="../imagens\Imagenes_Readme2\8.1.png" align = "center" height = "350" width="850"/>
+
+### 1) Multiplication table of negative numbers
+
+<img src="../imagens\Imagenes_Readme2\8.2.png" align = "center" height = "350" width="850"/>
+
+---------------------------------------------------------------
