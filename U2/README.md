@@ -455,27 +455,27 @@
 
 ### 1) Invalid option
 
-<img src="../imagens\Imagenes_Readme2\4.1.png" align = "center" height = "150" width="850"/>
+<img src="../imagens\Imagenes_Readme2\4.1.png" align = "center" height = "250" width="850"/>
 
 ### 2) Vegetarian whit pepper
 
-<img src="../imagens\Imagenes_Readme2\4.2.png" align = "center" height = "150" width="850"/>
+<img src="../imagens\Imagenes_Readme2\4.2.png" align = "center" height = "250" width="850"/>
 
 ### 3) Vegetarian whit tofu
 
-<img src="../imagens\Imagenes_Readme2\4.3.png" align = "center" height = "150" width="850"/>
+<img src="../imagens\Imagenes_Readme2\4.3.png" align = "center" height = "250" width="850"/>
 
 ### 4) No vegetarian whit pepperoni
 
-<img src="../imagens\Imagenes_Readme2\4.4.png" align = "center" height = "150" width="850"/>
+<img src="../imagens\Imagenes_Readme2\4.4.png" align = "center" height = "250" width="850"/>
 
 ### 5) No vegetarian whit ham
 
-<img src="../imagens\Imagenes_Readme2\4.5.png" align = "center" height = "150" width="850"/>
+<img src="../imagens\Imagenes_Readme2\4.5.png" align = "center" height = "250" width="850"/>
 
 ### 6) No vegetarian whit salmon
 
-<img src="../imagens\Imagenes_Readme2\4.6.png" align = "center" height = "150" width="850"/>
+<img src="../imagens\Imagenes_Readme2\4.6.png" align = "center" height = "250" width="850"/>
 
 ---------------------------------------------------------------
 
@@ -569,7 +569,7 @@
 
 ### 1) 6 temperatures
 
-<img src="../imagens\Imagenes_Readme2\5.1.png" align = "center" height = "150" width="850"/>
+<img src="../imagens\Imagenes_Readme2\5.1.png" align = "center" height = "350" width="850"/>
 
 ---------------------------------------------------------------
 
@@ -669,11 +669,11 @@
 
 ### 1) Invalid products
 
-<img src="../imagens\Imagenes_Readme2\6.1.png" align = "center" height = "150" width="850"/>
+<img src="../imagens\Imagenes_Readme2\6.1.png" align = "center" height = "150" width="650"/>
 
 ### 1) Products
 
-<img src="../imagens\Imagenes_Readme2\6.2.png" align = "center" height = "150" width="850"/>
+<img src="../imagens\Imagenes_Readme2\6.2.png" align = "center" height = "250" width="850"/>
 
 ---------------------------------------------------------------
 
@@ -768,11 +768,11 @@
 
 ### 1) Negative number
 
-<img src="../imagens\Imagenes_Readme2\7.1.png" align = "center" height = "150" width="850"/>
+<img src="../imagens\Imagenes_Readme2\7.1.png" align = "center" height = "200" width="850"/>
 
 ### 2) Number 0
 
-<img src="../imagens\Imagenes_Readme2\7.2.png" align = "center" height = "150" width="850"/>
+<img src="../imagens\Imagenes_Readme2\7.2.png" align = "center" height = "150" width="1000"/>
 
 ### 2) Positive number
 
@@ -888,7 +888,7 @@
 
 ### 1) Multiplication table of positive numbers
 
-<img src="../imagens\Imagenes_Readme2\8.1.png" align = "center" height = "350" width="850"/>
+<img src="../imagens\Imagenes_Readme2\8.1.png" align = "center" height = "400" width="850"/>
 
 ### 1) Multiplication table of negative numbers
 
