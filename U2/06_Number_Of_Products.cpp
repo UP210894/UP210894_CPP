@@ -9,7 +9,7 @@ indicates the total of the invoice. To know that the purchase has been completed
 entered in the quantily.
 */
 
-// Input/Output LIbrary between the screet "n" keyboard
+// Preprocessor directives
 #include <iostream>
 
 // Namespace avoid using std:: on all input and output

@@ -9,7 +9,7 @@ integer greater than 0. The result can be displayed as an integer variable or
 in a set of character.
 */
 
-// Input/Output LIbrary between the screet "n" keyboard
+// Preprocessor directives
 #include <iostream>
 
 // Namespace avoid using std:: on all input and output

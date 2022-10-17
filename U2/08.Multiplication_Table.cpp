@@ -4,11 +4,10 @@ Authot: Erique Abel Herrera Vargas
 Email: up210894@alumnos.upa.edu.mx
 Description: Loop "for" for the multiplication table
 -----Problem-----
-
 Write a program that prints the multiplication table you want up to the number you want.
 */
 
-// Input/Output LIbrary between the screet "n" keyboard#include <iostream>
+// Preprocessor directives
 #include <iostream>
 
 // Namespace avoid using std:: on all input and output

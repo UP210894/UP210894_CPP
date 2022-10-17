@@ -8,7 +8,7 @@ Make a program in whish 6 temperatures are entered and determine the average,
  the lowest and the highest
 */
 
-// Input/Output LIbrary between the screet "n" keyboard
+// Preprocessor directives
 #include <iostream>
 
 // Namespace avoid using std:: on all input and output

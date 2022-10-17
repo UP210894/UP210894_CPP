@@ -16,7 +16,7 @@ At the end it should be shown on the screen if the chosen pizza is vegetarian or
 ingredients it carries
 */
 
-// Input/Output LIbrary between the screet "n" keyboard
+// Preprocessor directives
 #include <iostream>
 
 // Namespace avoid using std:: on all input and output

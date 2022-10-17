@@ -17,7 +17,7 @@ Write a program that asks the user for their annual income and shows the corresp
 tax on the screen
 */
 
-// Input/Output LIbrary between the screet "n" keyboard
+// Preprocessor directives
 #include <iostream>
 
 using namespace std;

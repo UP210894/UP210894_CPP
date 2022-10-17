@@ -10,7 +10,7 @@ the client is under 4 years old can enter for free, if he is between 4 and 18 ye
 if you are over 18, $10
 */
 
-// Input/Output LIbrary between the screet "n" keyboard
+// Preprocessor directives
 #include <iostream>
 
 // Namespace avoid using std:: on all input and output

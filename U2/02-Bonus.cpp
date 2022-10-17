@@ -19,7 +19,7 @@ Write a program that reads the user's score and indicates their performance leve
 as well as the amount of money the user will receive
 */
 
-// Input/Output LIbrary between the screet "n" keyboard
+// Preprocessor directives
 #include <iostream>
 
 // Namespace avoid using std:: on all input and output
