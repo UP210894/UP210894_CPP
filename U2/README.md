@@ -890,8 +890,123 @@
 
 <img src="../imagens\Imagenes_Readme2\8.1.png" align = "center" height = "400" width="850"/>
 
-### 1) Multiplication table of negative numbers
+### 2) Multiplication table of negative numbers
 
 <img src="../imagens\Imagenes_Readme2\8.2.png" align = "center" height = "350" width="850"/>
+
+---------------------------------------------------------------
+
+<div align= justify>
+
+ # Exercise 9: Bisection method
+ ### Write a program that prints calculates the root of a function and prints the process.
+ 
+<div>
+
+<div align= justify>
+
+> ## INPUT
+
+```c++ 
+    // Enter the minimum and maximum value
+    cout << "Enter a: ";
+    cin >> a;
+    cout << "Enter b: ";
+    cin >> b;
+ ```
+<div align= justify>
+
+> ## PROCCESS
+
+```c++ 
+    // Loop "do while" find the root of the function
+    do
+    {
+        // Divide "a" and "b" to find "c", and find the value of "ya", "yb", and "yc" with our function to solve the equation
+        c = (a + b) / 2;
+        ya = equationSolver(a);
+        yc = equationSolver(c);
+        yb = equationSolver(b);
+
+        // Print the results of each cycle
+        cout << "|\t\t" << fixed << setprecision(8) << a << "\t\t" << b << "\t\t" << c << "\t\t" << ya << "\t\t" << yb << "\t\t" << yc << "\t\t|" << endl;
+
+        // "If" to assign a new value to "a" or "b"
+        if ((ya * yc) < 0)
+        {
+            b = c;
+        }
+        else
+        {
+            a = c;
+        }
+
+        if (a == b)
+        {
+            equality = 0;
+            break;
+        }
+
+        // "If" to avoid a loop when "a" and "b" are equal
+        for (int line = 0; line <= 160; line++)
+        {
+            cout << "-";
+        }
+        cout << endl;
+
+    } while ((yc >= 0.01) || (yc <= -0.01));
+ ```
+
+<div align= justify>
+
+> ## OUTPUT
+
+```c++ 
+    // Print the results
+    if (equality == 0)
+    {
+        cout << "There is no root" << endl;
+    }
+    else
+    {
+        cout << "The root of the equation is " << lround(c) << endl;
+    }
+```
+
+<div>
+
+<div align= justify>
+
+## Explanation 
+
+1. Input
+    
+    1.1. The program will ask the user the value of "a" and "b".
+    
+    1.2. The user will enter the value of "a" and "b".
+2. Process 
+    
+    2.1. The program shall calculate the value of "c", "already", "yb", "yc".
+    
+    2.2. The program will determine the new value of a and b to approximate the root of the function. 
+
+    2.3. The program will exit the "do while" cycle when "yc" is a value that is between "-.01 - .01".
+3. Output 
+
+    3.1. The program through an "if" will print the root of the function in case it has root. 
+
+<div>
+
+<div align= justify>
+
+> ## Texts 
+
+### 1) The root is not between the minimum and maximum value
+
+<img src="../imagens\Imagenes_Readme2\9.1.png" align = "center" height = "600" width="850"/>
+
+### 2) The root is between the minimum and maximum value
+
+<img src="../imagens\Imagenes_Readme2\9.2.png" align = "center" height = "600" width="850"/>
 
 ---------------------------------------------------------------
