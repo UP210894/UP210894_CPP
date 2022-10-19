@@ -25,7 +25,7 @@ float equationSolver(float valor)
 int main()
 {
     // Declaration of variables
-    float a, b, c, ya, yb, yc, equality = 1;
+    float error = .01, a, b, c, ya, yb, yc, equality = 1;
 
     // Enter the minimum and maximum value
     cout << "Enter a: ";
@@ -78,7 +78,7 @@ int main()
             a = c;
         }
 
-        if (a == b)
+        if (a==b)
         {
             equality = 0;
             break;
@@ -91,7 +91,7 @@ int main()
         }
         cout << endl;
 
-    } while ((yc >= 0.01) || (yc <= -0.01));
+    } while (abs(yc) >= error);
 
     // Print the results
     if (equality == 0)

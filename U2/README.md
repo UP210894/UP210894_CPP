@@ -941,7 +941,7 @@
             a = c;
         }
 
-        if (a == b)
+        if (a==b)
         {
             equality = 0;
             break;
@@ -954,7 +954,7 @@
         }
         cout << endl;
 
-    } while ((yc >= 0.01) || (yc <= -0.01));
+    } while (abs(yc) >= error);
  ```
 
 <div align= justify>
