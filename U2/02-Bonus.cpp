@@ -1,6 +1,6 @@
 /*
 Date: 26/09/2022
-Authot: Erique Abel Herrera Vargas
+Authot: Enrique Abel Herrera Vargas
 Email: up210894@alumnos.upa.edu.mx
 Description: Get employee bonus
 -----Problem-----
@@ -29,6 +29,7 @@ using namespace std;
 int main()
 {
     // Declaration of variables
+    
     double qualification;
     string performance;
 

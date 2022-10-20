@@ -1,6 +1,6 @@
 /*
 Date: 29/09/2022
-Authot: Erique Abel Herrera Vargas
+Authot: Enrique Abel Herrera Vargas
 Email: up210894@alumnos.upa.edu.mx
 Description: Pizzeria menu
 -----Problem-----

@@ -1,6 +1,6 @@
 /*
 Date: 13/10/2022
-Authot: Erique Abel Herrera Vargas
+Authot: Enrique Abel Herrera Vargas
 Email: up210894@alumnos.upa.edu.mx
 Description: Loop "for" for the multiplication table
 -----Problem-----
