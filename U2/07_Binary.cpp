@@ -41,7 +41,7 @@ int main()
         }
         else if (decimal == 0)
         {
-            result = '0';
+            result = "0";
         }
         else
         {
