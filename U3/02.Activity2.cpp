@@ -38,8 +38,6 @@ void getCambio (int money){
     money = money % 200; 
     cien = money / 100; 
     money = money % 100; 
-    cien = money / 100; 
-    money = money % 100; 
     cincuenta = money / 50; 
     money = money % 50; 
     veinte = money / 20; 
