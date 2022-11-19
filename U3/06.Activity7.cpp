@@ -1,3 +1,11 @@
+/*
+Date: 19/11/2022
+Authot: Enrique Abel Herrera Vargas
+Email: up210894@alumnos.upa.edu.mx
+Description: Tic tac toe game
+*/
+
+// Preprocessor directives
 #include <iostream>
 #include <stdalign.h>
 #include <time.h>
@@ -5,161 +13,236 @@
 // Namespace avoid using std:: on all input and output
 using namespace std;
 
-bool existeJugada(int jugada);
-void imprimirJugada();
-bool comprobarJugada(int jugada);
-void colocarJugada(int jugada);
-bool comprobarVictoria();
-int ingresarModoDeJuego();
-void clonarJugadas();
-bool comprobarVictoriaPc();
-bool evitarVictoriaPc();
-void generarNumeroAleatorio();
+// Function declaration
+bool checkThatThePlayExists(int play);
+void printPlay();
+bool checkIfPlayIsBusy(int play);
+void placePlay(int play);
+bool checkVictory();
+int enterGameMode();
+void clonePlays();
+bool checkVictoryPc();
+bool avoidVictoryPlayerPc();
+void generateRandomNumberPc();
 
-char matriz[3][3] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
-char matrizR[3][3] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
-int jugada;
-int simbolo = 0;
+// Declaration of global variables
+char matrix[3][3] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
+char matrixCopy[3][3] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
+int play;
+int turn = 0;
 int ren, col;
 
+//-----------MAIN FUNTION---------
 int main()
 {
-    bool existe, ocupada, victoria = false, victoriaPc = false, evitarPc = false, jugador = 0;
-    int modoDeJuego;
+
+    // Declaration of local variables
+    bool existingPlay, busyPlay, victory = false, victoryPC = false, avoidedDefeat = false, player = 0;
+    int gameMode;
     do
     {
-        modoDeJuego = ingresarModoDeJuego();
-        if (modoDeJuego == 1)
+        // Determine game mode
+        gameMode = enterGameMode();
+
+        // Player vs player game mode
+        if (gameMode == 1)
         {
-            imprimirJugada();
+            printPlay();
             do
             {
                 cout << endl;
-                jugador = simbolo % 2;
-                cout << "Ingrese una jugada jugador " << jugador + 1 << " : ";
-                cin >> jugada;
-                system("cls");
-                existe = existeJugada(jugada);
-                ocupada = comprobarJugada(jugada);
+                player = turn % 2;
+                cout << "Enter a play player " << player + 1 << " : ";
+                cin >> play;
+                system("clear");
+                existingPlay = checkThatThePlayExists(play);
+                busyPlay = checkIfPlayIsBusy(play);
 
-                if (existe == true)
+                if (existingPlay == true)
                 {
-                    if (ocupada == false)
+                    if (busyPlay == false)
                     {
-                        colocarJugada(jugada);
-                        simbolo++;
+                        placePlay(play);
+                        turn++;
                     }
-                    else if (ocupada == true)
+                    else
                     {
-
                         cout << "\033[0;31m"
-                             << "Casilla ocupada, elija otra!!!"
+                             << "Busy play, pick another!!!"
                              << "\033[0m" << endl;
                         cout << endl;
                     }
                 }
-                else if (existe == false)
+                else
                 {
-
                     cout << "\033[0;31m"
-                         << "La jugada es invalida!!!"
+                         << "The play is invalid!!!"
                          << "\033[0m" << endl;
                     cout << endl;
                 }
-                imprimirJugada();
-                victoria = comprobarVictoria();
-            } while ((simbolo < 9) && (victoria == false));
+
+                printPlay();
+                victory = checkVictory();
+
+            } while ((turn < 9) && (victory == false));
         }
 
-        else if (modoDeJuego == 2)
+        // Player vs Pc game mode
+        else if (gameMode == 2)
         {
-            imprimirJugada();
+            printPlay();
             do
             {
 
-                if (simbolo % 2 == 0)
+                if (turn % 2 == 0)
                 {
 
                     cout << endl;
-                    cout << "Ingrese una jugada: ";
-                    cin >> jugada;
-                    system("cls");
-                    existe = existeJugada(jugada);
-                    ocupada = comprobarJugada(jugada);
+                    cout << "Enter a play: ";
+                    cin >> play;
+                    system("clear");
+                    existingPlay = checkThatThePlayExists(play);
+                    busyPlay = checkIfPlayIsBusy(play);
 
-                    if (existe == true)
+                    if (existingPlay == true)
                     {
-                        if (ocupada == false)
-                        {
-                            colocarJugada(jugada);
-                            simbolo++;
-                        }
-                        else if (ocupada == true)
-                        {
 
+                        if (busyPlay == false)
+                        {
+                            placePlay(play);
+                            turn++;
+                        }
+
+                        else
+                        {
                             cout << "\033[0;31m"
-                                 << "Casilla ocupada, elija otra!!!"
+                                 << "Busy play, pick another!!!"
                                  << "\033[0m" << endl;
                             cout << endl;
                         }
                     }
-                    else if (existe == false)
+                    else
                     {
-
                         cout << "\033[0;31m"
-                             << "La jugada es invalida!!!"
+                             << "The play is invalid!!!"
                              << "\033[0m" << endl;
                         cout << endl;
                     }
-                    victoria = comprobarVictoria();
 
-                    imprimirJugada();
+                    victory = checkVictory();
+                    printPlay();
                 }
 
                 else
                 {
-                    clonarJugadas();
-                    victoriaPc = comprobarVictoriaPc();
-                    if (victoriaPc == true)
+                    clonePlays();
+                    victoryPC = checkVictoryPc();
+                    if (victoryPC == true)
                     {
-
                         break;
                     }
-                    else if (victoriaPc == false)
+
+                    else
                     {
-                        evitarPc = evitarVictoriaPc();
-                        if (evitarPc == true)
+                        avoidedDefeat = avoidVictoryPlayerPc();
+
+                        if (avoidedDefeat == false)
                         {
+                            generateRandomNumberPc();
                         }
+
                         else
                         {
-                            generarNumeroAleatorio();
                         }
                     }
-                    system("cls");
-                    imprimirJugada();
-                    simbolo++;
+                    system("clear");
+                    printPlay();
+                    turn++;
                 }
 
-            } while ((simbolo < 9) && (victoria == false && victoriaPc == false));
+            } while ((turn < 9) && (victory == false && victoryPC == false));
+
             system("cls");
-            imprimirJugada();
-            comprobarVictoria();
+            printPlay();
+            checkVictory();
         }
 
+        // Invalid game mode
         else
         {
             cout << "\033[0;31m"
-                 << "Modo de juego invalido"
+                 << "Invalid game mode"
                  << "\033[0m" << endl;
         }
-    } while (modoDeJuego != 1 && modoDeJuego != 2);
+
+    } while (gameMode != 1 && gameMode != 2);
+
     return 0;
 }
 
-bool existeJugada(int jugada)
+bool checkThatThePlayExists(int play)
 {
-    if (jugada >= 1 && jugada <= 9)
+    if (play >= 1 && play <= 9)
+    {
+        return true;
+    }
+
+    else
+    {
+        return false;
+    }
+}
+
+bool checkIfPlayIsBusy(int play)
+{
+
+    if (play == 1)
+    {
+        ren = 0;
+        col = 0;
+    }
+    else if (play == 2)
+    {
+        ren = 0;
+        col = 1;
+    }
+    else if (play == 3)
+    {
+        ren = 0;
+        col = 2;
+    }
+    else if (play == 4)
+    {
+        ren = 1;
+        col = 0;
+    }
+    else if (play == 5)
+    {
+        ren = 1;
+        col = 1;
+    }
+    else if (play == 6)
+    {
+        ren = 1;
+        col = 2;
+    }
+    else if (play == 7)
+    {
+        ren = 2;
+        col = 0;
+    }
+    else if (play == 8)
+    {
+        ren = 2;
+        col = 1;
+    }
+    else if (play == 9)
+    {
+        ren = 2;
+        col = 2;
+    }
+
+    if (matrix[ren][col] == 'x' || matrix[ren][col] == 'o')
     {
         return true;
     }
@@ -168,68 +251,9 @@ bool existeJugada(int jugada)
         return false;
     }
 }
-
-bool comprobarJugada(int jugada)
+void printPlay()
 {
-
-    if (jugada == 1)
-    {
-        ren = 0;
-        col = 0;
-    }
-    else if (jugada == 2)
-    {
-        ren = 0;
-        col = 1;
-    }
-    else if (jugada == 3)
-    {
-        ren = 0;
-        col = 2;
-    }
-    else if (jugada == 4)
-    {
-        ren = 1;
-        col = 0;
-    }
-    else if (jugada == 5)
-    {
-        ren = 1;
-        col = 1;
-    }
-    else if (jugada == 6)
-    {
-        ren = 1;
-        col = 2;
-    }
-    else if (jugada == 7)
-    {
-        ren = 2;
-        col = 0;
-    }
-    else if (jugada == 8)
-    {
-        ren = 2;
-        col = 1;
-    }
-    else if (jugada == 9)
-    {
-        ren = 2;
-        col = 2;
-    }
-
-    if (matriz[ren][col] == 'x' || matriz[ren][col] == 'o')
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
-void imprimirJugada()
-{
-    int x = 0, y = 0;
+    int row1 = 0, col1 = 0;
     cout << "Juego del gato" << endl;
     cout << endl;
     cout << "\033[0;32m"
@@ -249,24 +273,26 @@ void imprimirJugada()
                 if (col == 1 || col == 5 || col == 9)
                 {
 
-                    if (matriz[x][y] == 'x')
+                    if (matrix[row1][col1] == 'x')
                     {
-                        cout << "\033[0;32m" << matriz[x][y] << "\033[0m";
+                        cout << "\033[0;32m" << matrix[row1][col1] << "\033[0m";
                     }
-                    else if (matriz[x][y] == 'o')
+                    else if (matrix[row1][col1] == 'o')
                     {
-                        cout << "\033[0;33m" << matriz[x][y] << "\033[0m";
+                        cout << "\033[0;33m" << matrix[row1][col1] << "\033[0m";
                     }
                     else
                     {
-                        cout << matriz[x][y];
+                        cout << matrix[row1][col1];
                     }
-                    y++;
+                    col1++;
                 }
+
                 else if (col == 3 || col == 7)
                 {
                     cout << "|";
                 }
+
                 else
                 {
                     cout << " ";
@@ -285,48 +311,48 @@ void imprimirJugada()
             }
         }
         cout << endl;
-        if (y > 1)
+        if (col1 > 1)
         {
-            x++;
+            row1++;
         }
-        y = 0;
+        col1 = 0;
     }
 }
 
-void colocarJugada(int jugada)
+void placePlay(int play)
 {
-    if (simbolo % 2 == 0)
+    if (turn % 2 == 0)
     {
-        matriz[ren][col] = 'x';
+        matrix[ren][col] = 'x';
     }
     else
     {
-        matriz[ren][col] = 'o';
+        matrix[ren][col] = 'o';
     }
 }
 
-bool comprobarVictoria()
+bool checkVictory()
 {
-    if ((matriz[0][0] == matriz[0][1] && matriz[0][0] == matriz[0][2]) ||
-        (matriz[1][0] == matriz[1][1] && matriz[1][0] == matriz[1][2]) ||
-        (matriz[2][0] == matriz[2][1] && matriz[2][0] == matriz[2][2]) ||
-        (matriz[0][0] == matriz[1][0] && matriz[0][0] == matriz[2][0]) ||
-        (matriz[0][1] == matriz[1][1] && matriz[0][1] == matriz[2][1]) ||
-        (matriz[0][2] == matriz[1][2] && matriz[0][2] == matriz[2][2]) ||
-        (matriz[0][0] == matriz[1][1] && matriz[0][0] == matriz[2][2]) ||
-        (matriz[0][2] == matriz[1][1] && matriz[0][2] == matriz[2][0]))
+    if ((matrix[0][0] == matrix[0][1] && matrix[0][0] == matrix[0][2]) ||
+        (matrix[1][0] == matrix[1][1] && matrix[1][0] == matrix[1][2]) ||
+        (matrix[2][0] == matrix[2][1] && matrix[2][0] == matrix[2][2]) ||
+        (matrix[0][0] == matrix[1][0] && matrix[0][0] == matrix[2][0]) ||
+        (matrix[0][1] == matrix[1][1] && matrix[0][1] == matrix[2][1]) ||
+        (matrix[0][2] == matrix[1][2] && matrix[0][2] == matrix[2][2]) ||
+        (matrix[0][0] == matrix[1][1] && matrix[0][0] == matrix[2][2]) ||
+        (matrix[0][2] == matrix[1][1] && matrix[0][2] == matrix[2][0]))
     {
-        if (matriz[ren][col] == 'x')
+        if (matrix[ren][col] == 'x')
         {
             cout << "\033[0;32m"
-                 << "Victoria player 1"
+                 << "Victory player 1"
                  << "\033[0m";
             return true;
         }
         else
         {
             cout << "\033[0;33m"
-                 << "Victoria player 2"
+                 << "Victory player 2"
                  << "\033[0m";
             return true;
         }
@@ -337,23 +363,25 @@ bool comprobarVictoria()
     }
 }
 
-int ingresarModoDeJuego()
+int enterGameMode()
 {
 
-    int modoDeJuego;
+    int gameMode;
 
+    cout << endl;
     cout << "Menu" << endl;
-    cout << "Oprima 1 Player 1 vs Player 2" << endl;
-    cout << "Oprima 2 Player 1 vs CPU" << endl;
-    cout << "Modo de juego:";
-    cin >> modoDeJuego;
-    system("cls");
+    cout << "Press 1:   Player 1 vs Player 2" << endl;
+    cout << "Press 2:   Player 1 vs CPU" << endl;
+    cout << endl;
+    cout << "Game mode:";
+    cin >> gameMode;
+    system("clear");
 
-    if (modoDeJuego == 1)
+    if (gameMode == 1)
     {
         return 1;
     }
-    else if (modoDeJuego == 2)
+    else if (gameMode == 2)
     {
         return 2;
     }
@@ -363,95 +391,95 @@ int ingresarModoDeJuego()
     }
 }
 
-void clonarJugadas()
+void clonePlays()
 {
 
     for (int row = 0; row < 3; row++)
     {
         for (int col = 0; col < 3; col++)
         {
-            matrizR[row][col] = matriz[row][col];
+            matrixCopy[row][col] = matrix[row][col];
         }
     }
 }
 
-bool comprobarVictoriaPc()
+bool checkVictoryPc()
 {
 
-    for (int i = 1; i <= 9; i++)
+    for (int playNumber = 1; playNumber <= 9; playNumber++)
     {
 
-        bool ocupada, victoria;
+        bool busyPlay, victory;
 
-        ocupada = comprobarJugada(i);
+        busyPlay = checkIfPlayIsBusy(playNumber);
 
-        if (ocupada == false)
+        if (busyPlay == false)
         {
-            matriz[ren][col] = 'o';
-            victoria = comprobarVictoria();
-            if (victoria == true)
+            matrix[ren][col] = 'o';
+            victory = checkVictory();
+            if (victory == true)
             {
                 return true;
                 break;
             }
             else
             {
-                matriz[ren][col] = matrizR[ren][col];
+                matrix[ren][col] = matrixCopy[ren][col];
             }
         }
     }
     return false;
 }
-bool evitarVictoriaPc()
+bool avoidVictoryPlayerPc()
 {
 
-    for (int i = 1; i <= 9; i++)
+    bool busyPlay, victory;
+
+    for (int playNumber = 1; playNumber <= 9; playNumber++)
     {
 
-        bool ocupada, victoria;
+        busyPlay = checkIfPlayIsBusy(playNumber);
 
-        ocupada = comprobarJugada(i);
-
-        if (ocupada == false)
+        if (busyPlay == false)
         {
-            matriz[ren][col] = 'x';
-            victoria = comprobarVictoria();
-            if (victoria == true)
+            matrix[ren][col] = 'x';
+            victory = checkVictory();
+            if (victory == true)
             {
-                matriz[ren][col] = 'o';
+                matrix[ren][col] = 'o';
                 return true;
                 break;
             }
             else
             {
-                matriz[ren][col] = matrizR[ren][col];
+                matrix[ren][col] = matrixCopy[ren][col];
             }
         }
     }
     return false;
 }
 
-void generarNumeroAleatorio()
+void generateRandomNumberPc()
 {
 
-    bool ocupada = true;
-    int aleatorio;
+    bool busyPlay = true;
+    int random;
 
     do
     {
         srand(time(NULL));
-        aleatorio = 1 + rand() % 9 - 1 + 1;
+        random = 1 + rand() % 9 - 1 + 1;
 
-        ocupada = comprobarJugada(aleatorio);
+        busyPlay = checkIfPlayIsBusy(random);
 
-        if (ocupada == false)
+        if (busyPlay == false)
         {
-            matriz[ren][col] = 'o';
+            matrix[ren][col] = 'o';
         }
         else
         {
-            ocupada = true;
+            busyPlay = true;
         }
 
-    } while (ocupada == true);
+    } while (busyPlay == true);
 }
