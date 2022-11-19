@@ -162,7 +162,7 @@ int main()
 
             } while ((turn < 9) && (victory == false && victoryPC == false));
 
-            system("cls");
+            system("clear");
             printPlay();
             checkVictory();
         }
