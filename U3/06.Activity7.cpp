@@ -166,6 +166,7 @@ int main()
 
                         else
                         {
+                            system("clear");
                         }
                     }
                     system("clear");
