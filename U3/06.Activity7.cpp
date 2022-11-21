@@ -15,28 +15,17 @@ using namespace std;
 
 // ---Function declaration---
 
+
 bool checkThatThePlayExists(int play);
-// Determines if the play entered is valid, it will only be valid if a number between 1 and 9 is entered.
-// Parameters: play
 void printPlay();
-// Print the game board
 bool checkIfPlayIsBusy(int play);
-// Determines if the entered move has already been used
-// Parameters: play
 void placePlay();
-// Place the symbol in the indicated place on the board
 bool checkVictory();
-// Check if a win exists by comparing all possible wins
 int enterGameMode();
-// Shows the game menu and allows you to enter a game mode
 void clonePlays();
-// Replicates the original board
 bool checkVictoryPc();
-// Check if the computer has won and place the token on the selected spot
 bool avoidVictoryPlayerPc();
-// Checks if the player can win and the PC places his token on that spot to prevent the player from winning
 void generateRandomNumberPc();
-// Generate a random move and place a tile in the indicated place
 
 // Declaration of global variables
 char matrix[3][3] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
@@ -175,10 +164,28 @@ int main()
                 }
 
             } while ((turn < 9) && (victory == false && victoryPC == false));
-
             system("clear");
             printPlay();
-            checkVictory();
+            if ((turn == 9) && (victory == false && victoryPC == false)){
+
+                cout << endl;
+                cout << "\033[0;36m"
+                     << "Tie"
+                     << "\033[0m" << endl;
+
+             }
+             else if (victory == true){
+                cout << endl;
+                cout << "\033[0;32m"
+                     << "Win"
+                     << "\033[0m" << endl;
+             }
+             else {
+                cout << endl;
+                cout << "\033[0;31m"
+                     << "Game over"
+                     << "\033[0m" << endl;
+             }
         }
 
         // Invalid game mode
