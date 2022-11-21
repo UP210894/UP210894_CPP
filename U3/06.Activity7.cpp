@@ -87,6 +87,14 @@ int main()
                 victory = checkVictory();
 
             } while ((turn < 9) && (victory == false));
+                if ((turn = 9) && (victory == false)){
+                system("clear");
+                printPlay();
+                cout << endl;
+                cout << "\033[0;36m"
+                     << "Tie"
+                     << "\033[0m" << endl;
+                }
         }
 
         // Player vs Pc game mode
@@ -275,7 +283,7 @@ bool checkIfPlayIsBusy(int play)
 void printPlay()
 {
     int row1 = 0, col1 = 0;
-    cout << "Tic tac toe" << endl;
+    cout << "Juego del gato" << endl;
     cout << endl;
     cout << "\033[0;32m"
          << "Player 1 (x)\t"
@@ -368,7 +376,6 @@ bool checkVictory()
             cout << "\033[0;32m"
                  << "Victory player 1"
                  << "\033[0m";
-            cout << endl;
             return true;
         }
         else
@@ -376,7 +383,6 @@ bool checkVictory()
             cout << "\033[0;33m"
                  << "Victory player 2"
                  << "\033[0m";
-            cout << endl;
             return true;
         }
     }
