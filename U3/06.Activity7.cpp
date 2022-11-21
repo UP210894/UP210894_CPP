@@ -1,6 +1,5 @@
 /*
-14
-Date: 19/11/2022
+Date: 20/11/2022
 Authot: Enrique Abel Herrera Vargas
 Email: up210894@alumnos.upa.edu.mx
 Description: Tic tac toe game
@@ -14,17 +13,30 @@ Description: Tic tac toe game
 // Namespace avoid using std:: on all input and output
 using namespace std;
 
-// Function declaration
+// ---Function declaration---
+
 bool checkThatThePlayExists(int play);
+// Determines if the play entered is valid, it will only be valid if a number between 1 and 9 is entered.
+// Parameters: play
 void printPlay();
+// Print the game board
 bool checkIfPlayIsBusy(int play);
-void placePlay(int play);
+// Determines if the entered move has already been used
+// Parameters: play
+void placePlay();
+// Place the symbol in the indicated place on the board
 bool checkVictory();
+// Check if a win exists by comparing all possible wins
 int enterGameMode();
+// Shows the game menu and allows you to enter a game mode
 void clonePlays();
+// Replicates the original board
 bool checkVictoryPc();
+// Check if the computer has won and place the token on the selected spot
 bool avoidVictoryPlayerPc();
+// Checks if the player can win and the PC places his token on that spot to prevent the player from winning
 void generateRandomNumberPc();
+// Generate a random move and place a tile in the indicated place
 
 // Declaration of global variables
 char matrix[3][3] = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
@@ -63,7 +75,7 @@ int main()
                 {
                     if (busyPlay == false)
                     {
-                        placePlay(play);
+                        placePlay();
                         turn++;
                     }
                     else
@@ -110,7 +122,7 @@ int main()
 
                         if (busyPlay == false)
                         {
-                            placePlay(play);
+                            placePlay();
                             turn++;
                         }
 
@@ -320,7 +332,7 @@ void printPlay()
     }
 }
 
-void placePlay(int play)
+void placePlay()
 {
     if (turn % 2 == 0)
     {
