@@ -124,7 +124,7 @@ The program will show you the game menu, if you want to play in player vs player
 
 If a game mode other than 1 or 2 is entered, the program will display a message indicating that the chosen game mode is invalid.
 
-<img src="../imagens\Imagenes_Redme3\Modo_De_Juego_invalido.png" align = "center" height = "120" width="260"/>
+<img src="../imagens\Imagenes_Redme3\Modo_De_Juego_Invalido.png" align = "center" height = "120" width="250"/>
 
 <div align = center>
 
