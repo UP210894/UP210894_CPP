@@ -15,7 +15,6 @@ using namespace std;
 
 // ---Function declaration---
 
-
 bool checkThatThePlayExists(int play);
 void printPlay();
 bool checkIfPlayIsBusy(int play);
@@ -87,14 +86,15 @@ int main()
                 victory = checkVictory();
 
             } while ((turn < 9) && (victory == false));
-                if ((turn = 9) && (victory == false)){
+            if ((turn = 9) && (victory == false))
+            {
                 system("clear");
                 printPlay();
                 cout << endl;
                 cout << "\033[0;36m"
                      << "Tie"
                      << "\033[0m" << endl;
-                }
+            }
         }
 
         // Player vs Pc game mode
@@ -174,26 +174,28 @@ int main()
             } while ((turn < 9) && (victory == false && victoryPC == false));
             system("clear");
             printPlay();
-            if ((turn == 9) && (victory == false && victoryPC == false)){
+            if ((turn == 9) && (victory == false && victoryPC == false))
+            {
 
                 cout << endl;
                 cout << "\033[0;36m"
                      << "Tie"
                      << "\033[0m" << endl;
-
-             }
-             else if (victory == true){
+            }
+            else if (victory == true)
+            {
                 cout << endl;
                 cout << "\033[0;32m"
                      << "Win"
                      << "\033[0m" << endl;
-             }
-             else {
+            }
+            else
+            {
                 cout << endl;
                 cout << "\033[0;31m"
                      << "Game over"
                      << "\033[0m" << endl;
-             }
+            }
         }
 
         // Invalid game mode
