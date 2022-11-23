@@ -22,11 +22,11 @@ ___________________
 
 # INSTRUCTIONS FOR IMPLEMENTATION AND USE
 
-Instrucciones para jugar TIC TAC TOE en Linux
+<div align = "justify">
+
+Instructions to play Tic tac toe on Linux
 
 -----
-
-<div align = "justify">
 
 Clone my repository by entering the following command in your terminal
 
@@ -96,6 +96,8 @@ https://code.visualstudio.com/docs/cpp/config-linux
 ## FLOWCHART
 
 <div align = center>
+
+<img src="../imagens\Imagenes_Redme3\Diagrama++.png" align = "center" height = "1000" width="1500"/>
 
 [BACK TO INDEX](#index)
 
