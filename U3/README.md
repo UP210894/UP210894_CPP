@@ -24,7 +24,7 @@ ___________________
 
 <div align = "justify">
 
-Instructions to play Tic tac toe on Linux
+## Instructions to play Tic tac toe on Linux
 
 -----
 
@@ -75,7 +75,6 @@ To run the program enter the following command
 ./06.Activity7
 
 ```
-<div align = center>
 
 ## General considerations
 
