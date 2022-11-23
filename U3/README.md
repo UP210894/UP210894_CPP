@@ -90,14 +90,14 @@ https://code.visualstudio.com/docs/cpp/config-linux
 ```
 <div align = center>
 
-[BACK TO INDEX](#TIC_TAC_TOE)
+[BACK TO INDEX](#index)
 
 -----
 ## FLOWCHART
 
 <div align = center>
 
-[BACK TO INDEX](#TIC_TAC_TOE)
+[BACK TO INDEX](#index)
 
 -----
 # IMPLEMENTATION OF THE PROGRAM
@@ -206,7 +206,7 @@ If the player wins the program will show the message "Win"
 
 <div align = center>
 
-[BACK TO INDEX](#TIC_TAC_TOE)
+[BACK TO INDEX](#index)
 
 ------
 
@@ -222,7 +222,7 @@ This work integrated concepts such as the functioning of functions, different ty
 
 <div align = center>
 
-[BACK TO INDEX](#TIC_TAC_TOE)
+[BACK TO INDEX](#index)
 
 
 
