@@ -64,7 +64,7 @@ Once inside enter the following command to compile the program.
 
 ```c++ 
 
-gcc 06.Activity7.cpp
+gcc Tic_Tac_Toe.cpp
 
 ```
 
@@ -72,7 +72,7 @@ To run the program enter the following command
 
 ```c++ 
 
-./06.Activity7
+./Tic_Tac_Toe
 
 ```
 
